@@ -2,12 +2,12 @@ import requests
 import json
 import os
 
-# --- Configuration ---
+# Configuration
 GRAFANA_URL = "http://localhost:3000"  # Replace with your Grafana URL
 API_KEY = "YOUR_GRAFANA_API_KEY"       # Replace with your Grafana API key
 OUTPUT_DIR = "grafana_dashboards"      # Directory to save the exported JSON files
 
-# --- Functions ---
+# Functions
 def get_all_dashboards(grafana_url, api_key):
     """Fetches a list of all dashboards from Grafana."""
     headers = {"Authorization": f"Bearer {api_key}"}
